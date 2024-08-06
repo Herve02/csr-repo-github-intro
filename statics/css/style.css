@@ -1,4 +1,4 @@
-footer .contents .subscribe form button, .contact-form .content .form form button, .volunteer .content a, .about .content a, .hero .contents a, .hero header nav .donate {
+footer .contents .subscribe form button, .contact-form .content .form form button, .volunteer .content a, .about .content a, .hero .all-contents .contents a, .hero header nav .donate {
   padding: 16px 43px;
   background: #9B51E0;
   border-radius: 32px;
@@ -97,7 +97,7 @@ body {
   display: none;
   cursor: pointer;
 }
-.hero .contents {
+.hero .all-contents .contents {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,22 +110,22 @@ body {
   max-width: 721px;
   position: relative;
 }
-.hero .contents h2 {
+.hero .all-contents .contents h2 {
   color: white;
   font-size: 32px;
   font-weight: 700;
 }
-.hero .contents p {
+.hero .all-contents .contents p {
   color: white;
   font-size: 20px;
   font-weight: 400;
 }
-.hero .contents a {
+.hero .all-contents .contents a {
   padding-inline: 50px;
   color: white;
   font-size: 20px;
 }
-.hero .general-inquiries {
+.hero .all-contents .general-inquiries {
   font-size: 20px;
   width: 90%;
   max-width: 625px;
@@ -145,30 +145,30 @@ body {
   bottom: 0;
   right: 5%;
 }
-.hero .general-inquiries .contact {
+.hero .all-contents .general-inquiries .contact {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   gap: 10px;
 }
-.hero .general-inquiries .contact img {
+.hero .all-contents .general-inquiries .contact img {
   width: 24px;
   height: 24px;
 }
-.hero .general-inquiries .contact p {
+.hero .all-contents .general-inquiries .contact p {
   color: #141B12;
   font-size: 20px;
   font-weight: 500;
   line-height: 25.2px;
   text-align: left;
 }
-.hero .general-inquiries .contact .line {
+.hero .all-contents .general-inquiries .contact .line {
   width: 1px;
   height: 80px;
   background: #D9D9D9;
 }
-.hero .general-inquiries .contact ul {
+.hero .all-contents .general-inquiries .contact ul {
   list-style: none;
 }
 
@@ -1291,10 +1291,8 @@ footer .copy-right {
 }
 
 @media (max-width: 768px) {
-  .hero header nav .donate, .hero .contents a, .about .content a, .volunteer .content a, .contact-form .content .form form button, footer .contents .subscribe form button {
-    padding: 12px 35px;
-    border-radius: 25px;
-    font-size: 18px;
+  .hero header {
+    background-color: green;
   }
   .hero header nav {
     position: relative;
@@ -1315,13 +1313,17 @@ footer .copy-right {
     margin-right: unset;
     position: absolute;
     top: 80px;
+    left: 0;
     width: 100%;
     height: 80vh;
     background: #95A4FC;
-    transition: 0.5s;
+    display: none;
   }
   .hero header nav ul li a {
     font-size: 18px;
+  }
+  .hero header nav #nav-bar.active {
+    display: none;
   }
   .hero header nav .donate {
     font-size: 18px;
@@ -1331,11 +1333,8 @@ footer .copy-right {
   .hero header nav svg {
     display: none;
   }
-  .hero header nav #humberger {
-    display: block;
-  }
   .hero .contents {
-    padding-top: 100px;
+    padding-top: 40px;
     padding-left: unset;
   }
   .hero .contents h2 {
@@ -1345,12 +1344,13 @@ footer .copy-right {
     font-size: 18px;
   }
   .hero .contents a {
+    padding: 12px 35px;
+    border-radius: 25px;
+    font-size: 18px;
     font-size: 18px;
   }
   .hero .general-inquiries {
-    position: unset;
     font-size: 18px;
-    width: 100%;
     height: 100px;
     bottom: 0;
   }
@@ -1718,6 +1718,9 @@ footer .copy-right {
     flex-direction: column;
   }
   .contact-form .content .form form button {
+    padding: 12px 35px;
+    border-radius: 25px;
+    font-size: 18px;
     width: 100%;
     border-radius: 32px;
   }
@@ -1756,6 +1759,9 @@ footer .copy-right {
     padding: 8px 12px;
   }
   footer .contents .subscribe form button {
+    padding: 12px 35px;
+    border-radius: 25px;
+    font-size: 18px;
     width: -moz-fit-content;
     width: fit-content;
   }

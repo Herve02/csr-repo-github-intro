@@ -100,7 +100,8 @@ body{
     // .nav-active{
     //     background: red;
     // }
-    .contents{
+    .all-contents{
+        .contents{
         @include flex(column);
         align-items: start;
         padding-top: 30px;
@@ -166,6 +167,7 @@ body{
                 list-style: none;
             }
         }
+    }
     }
 }
 

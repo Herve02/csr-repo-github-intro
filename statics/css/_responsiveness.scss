@@ -1,11 +1,12 @@
 @media (max-width: 768px){
-    %btns{
+    @mixin btns{
         padding: 12px 35px;
         border-radius: 25px;  
         font-size: 18px;
     }
 .hero{
-    header{
+    header{  
+        background-color: green;
         nav{
             position: relative;            
             z-index: 999;
@@ -22,17 +23,20 @@
                 margin-right: unset;
                 position: absolute;
                 top: 80px;
+                left: 0;
                 width: 100%;
                 height: 80vh;
                 background: #95A4FC;
-                transition: .5s;
-                // display: none;
+                display: none;
                 li{
                     a{
                         font-size: 18px;
                     }
                 }
-            } 
+            }
+            #nav-bar.active{
+                display: none;
+            }
             .donate{
                font-size: 18px;
                padding: 8px 32px;
@@ -40,14 +44,11 @@
             }
             svg{
                 display: none;
-            } 
-            #humberger{
-                display: block;
-            }           
+            }            
         }    
     }
     .contents{
-        padding-top: 100px;
+        padding-top: 40px;
         padding-left: unset;
         h2{
             font-size: 24px;
@@ -57,14 +58,12 @@
         }
         a{
         
-        @extend %btns;
+        @include btns();;
         font-size: 18px;
         }
     }
     .general-inquiries{
-        position: unset;
         font-size: 18px;
-        width: 100%;
         height: 100px;
         bottom: 0;
         .contact{
@@ -426,7 +425,7 @@
                     @include flex(column);       
                 }
                 button{
-                    @extend %btns;
+                    @include btns();;
                     width: 100%;
                     border-radius: 32px;                                      
                 }
@@ -463,7 +462,7 @@ footer{
                 }
 
                 button{
-                    @extend %btns;
+                    @include btns();;
                     width: fit-content; 
                 }
             }
