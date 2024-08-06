@@ -51,12 +51,13 @@ body {
 .hero header {
   position: fixed;
   top: 0;
-  width: 90%;
+  width: 100%;
   z-index: 999;
   transition: 0.5s;
 }
 .hero header nav {
   width: 100%;
+  padding-inline: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,6 +78,7 @@ body {
   gap: 20px;
   margin-left: auto;
   margin-right: 50px;
+  transition: 0.5s;
 }
 .hero header nav ul li a {
   color: white;
@@ -96,6 +98,9 @@ body {
 .hero header nav #humberger {
   display: none;
   cursor: pointer;
+}
+.hero .all-contents {
+  width: 100%;
 }
 .hero .all-contents .contents {
   display: flex;
@@ -1291,9 +1296,6 @@ footer .copy-right {
 }
 
 @media (max-width: 768px) {
-  .hero header {
-    background-color: green;
-  }
   .hero header nav {
     position: relative;
     z-index: 999;
@@ -1301,6 +1303,9 @@ footer .copy-right {
   .hero header nav .logo {
     height: 53px;
     width: 64px;
+  }
+  .hero header nav .logo img {
+    width: 100%;
   }
   .hero header nav ul {
     display: flex;
@@ -1313,55 +1318,54 @@ footer .copy-right {
     margin-right: unset;
     position: absolute;
     top: 80px;
-    left: 0;
     width: 100%;
     height: 80vh;
     background: #95A4FC;
-    display: none;
   }
   .hero header nav ul li a {
     font-size: 18px;
-  }
-  .hero header nav #nav-bar.active {
-    display: none;
   }
   .hero header nav .donate {
     font-size: 18px;
     padding: 8px 32px;
     display: none;
   }
-  .hero header nav svg {
-    display: none;
+  .hero header nav #humberger {
+    display: block;
   }
-  .hero .contents {
-    padding-top: 40px;
+  .hero .all-contents {
+    padding-top: 100px;
+  }
+  .hero .all-contents .contents {
     padding-left: unset;
   }
-  .hero .contents h2 {
+  .hero .all-contents .contents h2 {
     font-size: 24px;
   }
-  .hero .contents p {
+  .hero .all-contents .contents p {
     font-size: 18px;
   }
-  .hero .contents a {
+  .hero .all-contents .contents a {
     padding: 12px 35px;
     border-radius: 25px;
     font-size: 18px;
     font-size: 18px;
   }
-  .hero .general-inquiries {
+  .hero .all-contents .general-inquiries {
+    position: unset;
+    width: 100%;
     font-size: 18px;
     height: 100px;
     bottom: 0;
   }
-  .hero .general-inquiries .contact {
+  .hero .all-contents .general-inquiries .contact {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     gap: 10px;
   }
-  .hero .general-inquiries .contact p {
+  .hero .all-contents .general-inquiries .contact p {
     font-size: 18px;
   }
   .about {
