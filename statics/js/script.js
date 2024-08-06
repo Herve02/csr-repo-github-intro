@@ -12,7 +12,7 @@ humberger.addEventListener("click",()=>{
 
 window.addEventListener("scroll",function(){
     if(this.window.scrollY > 0){
-        header.style.background = "orange"
+        header.style.background = "#8B8B8B"
     }
     else{
         header.style.background = "transparent"

@@ -1320,7 +1320,7 @@ footer .copy-right {
     top: 80px;
     width: 100%;
     height: 80vh;
-    background: #95A4FC;
+    background: #8B8B8B;
   }
   .hero header nav ul li a {
     font-size: 18px;
@@ -1352,21 +1352,27 @@ footer .copy-right {
     font-size: 18px;
   }
   .hero .all-contents .general-inquiries {
-    position: unset;
     width: 100%;
     font-size: 18px;
-    height: 100px;
-    bottom: 0;
+    height: auto;
+    position: unset;
   }
   .hero .all-contents .general-inquiries .contact {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     gap: 10px;
   }
   .hero .all-contents .general-inquiries .contact p {
     font-size: 18px;
+    text-align: center;
+  }
+  .hero .all-contents .general-inquiries .contact .line {
+    display: none;
+  }
+  .hero .all-contents .general-inquiries .contact ul li {
+    text-align: center;
   }
   .about {
     display: flex;
