@@ -54,11 +54,11 @@ body{
     position: relative;
 
     header{   
-        // background-color: red;
         position: fixed;
         top: 0;
         width: 90%;
         z-index: 999;
+        transition: .5s;
         nav{
             width: 100%;
             @include flex(row);
@@ -91,11 +91,15 @@ body{
                font-size: 20px;
             }
             #humberger{
-                display: none
+                display: none;
+                cursor: pointer;
             }
             
         }    
     }
+    // .nav-active{
+    //     background: red;
+    // }
     .contents{
         @include flex(column);
         align-items: start;
@@ -168,6 +172,7 @@ body{
 // section2:ABOUT US
 .about{
     // background-color: red;
+    padding-block: 40px;
     @include flex(row);
     gap: 20px;
     min-height: 100vh;

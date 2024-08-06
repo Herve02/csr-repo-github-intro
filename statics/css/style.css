@@ -53,6 +53,7 @@ body {
   top: 0;
   width: 90%;
   z-index: 999;
+  transition: 0.5s;
 }
 .hero header nav {
   width: 100%;
@@ -94,6 +95,7 @@ body {
 }
 .hero header nav #humberger {
   display: none;
+  cursor: pointer;
 }
 .hero .contents {
   display: flex;
@@ -171,6 +173,7 @@ body {
 }
 
 .about {
+  padding-block: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1312,10 +1315,10 @@ footer .copy-right {
     margin-right: unset;
     position: absolute;
     top: 80px;
-    left: 0;
     width: 100%;
     height: 80vh;
     background: #95A4FC;
+    transition: 0.5s;
   }
   .hero header nav ul li a {
     font-size: 18px;
@@ -1332,7 +1335,7 @@ footer .copy-right {
     display: block;
   }
   .hero .contents {
-    padding-top: 40px;
+    padding-top: 100px;
     padding-left: unset;
   }
   .hero .contents h2 {
@@ -1345,7 +1348,9 @@ footer .copy-right {
     font-size: 18px;
   }
   .hero .general-inquiries {
+    position: unset;
     font-size: 18px;
+    width: 100%;
     height: 100px;
     bottom: 0;
   }

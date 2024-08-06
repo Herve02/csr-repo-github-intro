@@ -22,18 +22,17 @@
                 margin-right: unset;
                 position: absolute;
                 top: 80px;
-                left: 0;
                 width: 100%;
                 height: 80vh;
                 background: #95A4FC;
+                transition: .5s;
                 // display: none;
                 li{
                     a{
                         font-size: 18px;
                     }
                 }
-            }
- 
+            } 
             .donate{
                font-size: 18px;
                padding: 8px 32px;
@@ -48,7 +47,7 @@
         }    
     }
     .contents{
-        padding-top: 40px;
+        padding-top: 100px;
         padding-left: unset;
         h2{
             font-size: 24px;
@@ -63,7 +62,9 @@
         }
     }
     .general-inquiries{
+        position: unset;
         font-size: 18px;
+        width: 100%;
         height: 100px;
         bottom: 0;
         .contact{
